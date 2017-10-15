@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+    <package name="default" extends="struts-default">
+        <action name="Search_Book" class="exp2.action.SearchBook">
+        	<result name="success">/search.jsp</result>
+        	<result name="error">/search.jsp</result>
+        </action>
+        <action name="Get_Author" class="exp2.action.GetAuthor">
+        	<result name="success">/author.jsp</result>
+        	<result name="error">/search.jsp</result>
+        </action>
+        <action name="Get_Book" class="exp2.action.GetBook">
+        	<result name="success">/book.jsp</result>
+        	<result name="error">/search.jsp</result>
+        </action>
+        <action name="Delete_Book" class="exp2.action.DeleteBook">
+        	<result name="success">/index.jsp</result>
+        	<result name="error">/index.jsp</result>
+        </action>
+        <action name="Insert_Author" class="exp2.action.InsertAuthor"  method="run"></action>
+        <action name="Insert_Book" class="exp2.action.InsertBook" method="run"></action>
+        <action name="Search_Author" class="exp2.action.SearchAuthor" method="run"></action>
+        <action name="Isbn_Validate" class="exp2.action.IsbnValidate" method="run"></action>
+        <action name="Update_Book" class="exp2.action.UpdateBook" method="run"></action>
+        <action name="Update_Author" class="exp2.action.UpdateAuthor" method="run"></action>
+    </package>
+</struts>
