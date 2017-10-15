@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.sql.ResultSet;
 
 /**
- * 所有有关数据库的操作在此进行
+ * 所有有关数据库的操作在此进行 
  * @author Alan
  *
  */
@@ -34,7 +34,7 @@ public class DB {
 				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library2?useSSL=false&characterEncoding=UTF-8", "root", "");
 			}
 			else{
-				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "lw425k0zzw", "hx1imiw13yjh024z1ii1zijh2wlh0xym4yx4m1hh");
+				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "username", "password");
 			}
     	   stmt = conn.createStatement();
 		   rs = stmt.executeQuery(sql);
@@ -98,7 +98,7 @@ public class DB {
 				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library2?useSSL=false&characterEncoding=UTF-8", "root", "");
 			}
 			else{
-				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "lw425k0zzw", "hx1imiw13yjh024z1ii1zijh2wlh0xym4yx4m1hh");
+				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "username", "password");
 			}
     	   stmt = conn.createStatement();
 		   rs = stmt.executeQuery(sql);
@@ -155,7 +155,7 @@ public class DB {
 					conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library2?useSSL=false&characterEncoding=UTF-8", "root", "");
 				}
 				else{
-					conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "lw425k0zzw", "hx1imiw13yjh024z1ii1zijh2wlh0xym4yx4m1hh");
+					conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "username", "password");
 				}
 				stmt = conn.createStatement();
 			
@@ -212,7 +212,7 @@ public class DB {
 				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library2?useSSL=false&characterEncoding=UTF-8", "root", "");
 			}
 			else{
-				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "lw425k0zzw", "hx1imiw13yjh024z1ii1zijh2wlh0xym4yx4m1hh");
+				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "username", "password");
 			}
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(sql);//find if the book exits in the database
@@ -240,7 +240,7 @@ public class DB {
 				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library2?useSSL=false&characterEncoding=UTF-8", "root", "");
 			}
 			else{
-				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "lw425k0zzw", "hx1imiw13yjh024z1ii1zijh2wlh0xym4yx4m1hh");
+				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "username", "password");
 			}
 			stmt = conn.createStatement();
 			stmt.executeUpdate(sql);//insert the book into database
@@ -278,7 +278,7 @@ public class DB {
 				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library2?useSSL=false&characterEncoding=UTF-8", "root", "");
 			}
 			else{
-				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "lw425k0zzw", "hx1imiw13yjh024z1ii1zijh2wlh0xym4yx4m1hh");
+				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "username", "password");
 			}
 			stmt = conn.createStatement();
 		    rs = stmt.executeQuery(sql);
@@ -334,7 +334,7 @@ public class DB {
 				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library2?useSSL=false&characterEncoding=UTF-8", "root", "");
 			}
 			else{
-				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "lw425k0zzw", "hx1imiw13yjh024z1ii1zijh2wlh0xym4yx4m1hh");
+				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "username", "password");
 			}
 			stmt = conn.createStatement();
 			stmt.executeUpdate(sql);
@@ -359,7 +359,7 @@ public class DB {
 				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library2?useSSL=false&characterEncoding=UTF-8", "root", "");
 			}
 			else{
-				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "lw425k0zzw", "hx1imiw13yjh024z1ii1zijh2wlh0xym4yx4m1hh");
+				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "username", "password");
 			}
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(sql);//find if the person exits in the database
@@ -398,7 +398,7 @@ public class DB {
 				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library2?useSSL=false&characterEncoding=UTF-8", "root", "");
 			}
 			else{
-				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "lw425k0zzw", "hx1imiw13yjh024z1ii1zijh2wlh0xym4yx4m1hh");
+				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "username", "password");
 			}
 			stmt = conn.createStatement();
 			stmt.executeUpdate(sql);
@@ -433,7 +433,7 @@ public class DB {
 				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library2?useSSL=false&characterEncoding=UTF-8", "root", "");
 			}
 			else{
-				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "lw425k0zzw", "hx1imiw13yjh024z1ii1zijh2wlh0xym4yx4m1hh");
+				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "username", "password");
 			}
 			stmt = conn.createStatement();
 			stmt.executeUpdate(sql);
@@ -468,7 +468,7 @@ public class DB {
 				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library2?useSSL=false&characterEncoding=UTF-8", "root", "");
 			}
 			else{
-				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "lw425k0zzw", "hx1imiw13yjh024z1ii1zijh2wlh0xym4yx4m1hh");
+				conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3306/app_xuezhlab2?useSSL=false&characterEncoding=UTF-8", "username", "password");
 			}
 			stmt = conn.createStatement();
 			return stmt.executeUpdate(sql) == 1;
